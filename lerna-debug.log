@@ -1,0 +1,55 @@
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   private: false,
+0 silly argv   lernaVersion: '6.4.1',
+0 silly argv   '$0': '..\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js'
+0 silly argv }
+1 notice cli v6.4.1
+2 verbose rootPath C:\Users\QU44NF\getting-started-example
+3 info current version 0.0.0
+4 silly isAnythingCommitted
+5 verbose isAnythingCommitted 1
+6 silly getCurrentBranch
+7 verbose currentBranch prelerna
+8 silly remoteBranchExists
+9 silly isBehindUpstream
+10 silly isBehindUpstream prelerna is behind origin/prelerna by 0 commit(s) and ahead by 1
+11 silly hasTags
+12 verbose hasTags true
+13 silly git-describe.sync "6307cb5" => {"refCount":"6","sha":"6307cb5","isDirty":false}
+14 info Assuming all packages changed
+15 verbose updated footer
+16 verbose updated header
+17 verbose updated remixapp
+18 verbose git-describe undefined => "6307cb5"
+19 silly git-describe parsed => {"refCount":"6","sha":"6307cb5","isDirty":false}
+20 info execute Skipping releases
+21 silly lifecycle No script for "preversion" in "root", continuing
+22 silly lifecycle No script for "preversion" in "footer", continuing
+23 silly lifecycle No script for "preversion" in "header", continuing
+24 silly lifecycle No script for "version" in "footer", continuing
+25 silly lifecycle No script for "version" in "header", continuing
+26 verbose version Updating root package-lock.json
+27 silly lifecycle No script for "version" in "root", continuing
+28 silly gitAdd [
+28 silly gitAdd   'packages/footer/package.json',
+28 silly gitAdd   'packages/footer/package-lock.json',
+28 silly gitAdd   'packages/header/package.json',
+28 silly gitAdd   'packages/header/package-lock.json',
+28 silly gitAdd   'lerna.json',
+28 silly gitAdd   'package-lock.json'
+28 silly gitAdd ]
+29 silly gitCommit v0.0.1
+30 verbose git [ 'commit', '-m', 'v0.0.1' ]
+31 silly gitTag v0.0.1 git tag %s -m %s
+32 verbose git [ 'tag', 'v0.0.1', '-m', 'v0.0.1' ]
+33 silly lifecycle No script for "postversion" in "footer", continuing
+34 silly lifecycle No script for "postversion" in "header", continuing
+35 silly lifecycle No script for "postversion" in "root", continuing
+36 info git Pushing tags...
+37 silly gitPush origin prelerna
+38 error Error: Command failed with exit code 128: git push --follow-tags --no-verify --atomic origin prelerna
+38 error remote: Permission to lerna/getting-started-example.git denied to Mrx207.
+38 error fatal: unable to access 'https://github.com/lerna/getting-started-example.git/': The requested URL returned error: 403
+38 error     at makeError (C:\Users\QU44NF\getting-started-example\node_modules\execa\lib\error.js:60:11)
+38 error     at handlePromise (C:\Users\QU44NF\getting-started-example\node_modules\execa\index.js:118:26)
