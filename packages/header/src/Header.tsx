@@ -3,7 +3,7 @@ import React from 'react';
 export function Header() {
     return (
         <header>
-            Lerna is the original monorepo tool! lets see 2.04
+            Lerna is the original monorepo tool! lets see 2.05
         </header>
     );
 }
